@@ -10,6 +10,7 @@
 		4332F1E119DD08A700EAB480 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4332F1E019DD08A700EAB480 /* Foundation.framework */; };
 		4332F1E419DD08A700EAB480 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4332F1E319DD08A700EAB480 /* main.m */; };
 		4332F1E819DD08A700EAB480 /* Callbacks.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4332F1E719DD08A700EAB480 /* Callbacks.1 */; };
+		4332F1F019DD095D00EAB480 /* BNRLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4332F1EF19DD095D00EAB480 /* BNRLogger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		4332F1E319DD08A700EAB480 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4332F1E619DD08A700EAB480 /* Callbacks-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Callbacks-Prefix.pch"; sourceTree = "<group>"; };
 		4332F1E719DD08A700EAB480 /* Callbacks.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Callbacks.1; sourceTree = "<group>"; };
+		4332F1EE19DD095D00EAB480 /* BNRLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRLogger.h; sourceTree = "<group>"; };
+		4332F1EF19DD095D00EAB480 /* BNRLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRLogger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				4332F1E319DD08A700EAB480 /* main.m */,
+				4332F1EE19DD095D00EAB480 /* BNRLogger.h */,
+				4332F1EF19DD095D00EAB480 /* BNRLogger.m */,
 				4332F1E719DD08A700EAB480 /* Callbacks.1 */,
 				4332F1E519DD08A700EAB480 /* Supporting Files */,
 			);
@@ -139,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4332F1F019DD095D00EAB480 /* BNRLogger.m in Sources */,
 				4332F1E419DD08A700EAB480 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
