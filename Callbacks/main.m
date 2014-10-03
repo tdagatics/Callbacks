@@ -18,9 +18,11 @@ int main(int argc, const char * argv[])
         
         BNRLogger *logger = [[BNRLogger alloc] init];
         
+        [[NSNotificationCenter defaultCenter] addObserver:logger selector:@selector(zoneChange:) name:NSSystemTimeZoneDidChangeNotification object:nil];
+        
         NSURL *url = [NSURL URLWithString:@"http://www.gutenberg.org/cache/epub/805/pg805.txt"];
                 
-        NSURL *request = [NSURLRequest requestWithURL:url];
+        NSURLRequest *request = [NSURLRequest requestWithURL:url];
         
         __unused NSURLConnection *fetchConn = [[NSURLConnection alloc] initWithRequest:request delegate:logger startImmediately:YES];
         

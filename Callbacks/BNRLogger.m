@@ -37,9 +37,9 @@
     //Create a mutable data if it does not already exist
     if (!incomingData) {
         NSMutableData *incomingData = [[NSMutableData alloc] init];
-
     }
     [incomingData appendData:data];
+    
 }
 
 // Called when the last chunk has been processed
@@ -62,5 +62,10 @@
 {
     NSLog(@"connection failed: %@", [error localizedDescription]);
     incomingData = nil;
+}
+
+-(void)zoneChange:(NSNotification *)note
+{
+    NSLog(@"The system time zone has changed.");
 }
 @end
