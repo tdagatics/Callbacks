@@ -18,7 +18,13 @@ int main(int argc, const char * argv[])
         
         BNRLogger *logger = [[BNRLogger alloc] init];
         
-        NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:logger selector:@selector(updateLastTime:) userInfo:nil repeats:YES];
+        NSURL *url = [NSURL URLWithString:@"http://www.gutenberg.org/cache/epub/205/pg205.txt"];
+                
+        NSURL *request = [NSURLRequest requestWithURL:url];
+        
+        __unused NSURLConnection *fetchConn = [[NSURLConnection alloc] initWithRequest:request delegate:logger startImmediately:YES];
+        
+        __unused NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:logger selector:@selector(updateLastTime:) userInfo:nil repeats:YES];
         
         [[NSRunLoop currentRunLoop] run];
         

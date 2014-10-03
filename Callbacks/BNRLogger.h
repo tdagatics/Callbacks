@@ -8,7 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BNRLogger : NSObject
+@interface BNRLogger : NSObject <NSURLConnectionDelegate, NSURLConnectionDataDelegate>
+
+{
+    NSMutableArray *incomingData;
+}
 
 @property (nonatomic) NSDate *lastTime;
 - (NSString *)lastTimeString;

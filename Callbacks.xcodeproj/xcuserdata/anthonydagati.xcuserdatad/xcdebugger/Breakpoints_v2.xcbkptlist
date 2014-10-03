@@ -10,13 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Callbacks/BNRLogger.h"
-            timestampString = "433916702.10565"
+            timestampString = "433992440.523306"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "@interface BNRLogger"
-            landmarkType = "2">
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "-updateLastTime:"
+            landmarkType = "4">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

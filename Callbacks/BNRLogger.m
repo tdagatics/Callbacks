@@ -28,4 +28,11 @@
     self.lastTime = now;
     NSLog(@"Just set the time to: %@", self.lastTimeString);
 }
+
+// Called each time a chunk of data arrives
+-(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
+{
+    NSLog(@"received %lu bytes", [data length]);
+                                  
+}
 @end
