@@ -33,6 +33,14 @@
 -(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
     NSLog(@"received %lu bytes", [data length]);
-                                  
+ 
+    //Create a mutable data if it does not already exist
+    if (!incomingData) {
+        NSMutableData *incomingData = [[NSMutableData alloc] init];
+
+    }
+    [incomingData addObject:data];
 }
+
+
 @end
