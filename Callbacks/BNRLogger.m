@@ -56,5 +56,11 @@
     NSLog(@"The whole string is %@", string);
 }
 
+// Called if the fetch fails
 
+-(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
+{
+    NSLog(@"connection failed: %@", [error localizedDescription]);
+    incomingData = nil;
+}
 @end

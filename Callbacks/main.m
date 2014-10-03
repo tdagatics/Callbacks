@@ -18,7 +18,7 @@ int main(int argc, const char * argv[])
         
         BNRLogger *logger = [[BNRLogger alloc] init];
         
-        NSURL *url = [NSURL URLWithString:@"http://www.gutenberg.org/cache/epub/205/pg205.txt"];
+        NSURL *url = [NSURL URLWithString:@"http://www.gutenberg.org/cache/epub/805/pg805.txt"];
                 
         NSURL *request = [NSURLRequest requestWithURL:url];
         
