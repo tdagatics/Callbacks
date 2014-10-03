@@ -11,7 +11,7 @@
 @interface BNRLogger : NSObject <NSURLConnectionDelegate, NSURLConnectionDataDelegate>
 
 {
-    NSMutableArray *incomingData;
+    NSMutableData *incomingData;
 }
 
 @property (nonatomic) NSDate *lastTime;
