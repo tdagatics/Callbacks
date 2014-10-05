@@ -11,6 +11,7 @@
 		4332F1E419DD08A700EAB480 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4332F1E319DD08A700EAB480 /* main.m */; };
 		4332F1E819DD08A700EAB480 /* Callbacks.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4332F1E719DD08A700EAB480 /* Callbacks.1 */; };
 		4332F1F019DD095D00EAB480 /* BNRLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4332F1EF19DD095D00EAB480 /* BNRLogger.m */; };
+		437E538B19E1B29B00F1C556 /* BNRObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 437E538A19E1B29B00F1C556 /* BNRObserver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		4332F1E719DD08A700EAB480 /* Callbacks.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Callbacks.1; sourceTree = "<group>"; };
 		4332F1EE19DD095D00EAB480 /* BNRLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRLogger.h; sourceTree = "<group>"; };
 		4332F1EF19DD095D00EAB480 /* BNRLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRLogger.m; sourceTree = "<group>"; };
+		437E538919E1B29B00F1C556 /* BNRObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRObserver.h; sourceTree = "<group>"; };
+		437E538A19E1B29B00F1C556 /* BNRObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRObserver.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,8 @@
 				4332F1E319DD08A700EAB480 /* main.m */,
 				4332F1EE19DD095D00EAB480 /* BNRLogger.h */,
 				4332F1EF19DD095D00EAB480 /* BNRLogger.m */,
+				437E538919E1B29B00F1C556 /* BNRObserver.h */,
+				437E538A19E1B29B00F1C556 /* BNRObserver.m */,
 				4332F1E719DD08A700EAB480 /* Callbacks.1 */,
 				4332F1E519DD08A700EAB480 /* Supporting Files */,
 			);
@@ -145,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4332F1F019DD095D00EAB480 /* BNRLogger.m in Sources */,
+				437E538B19E1B29B00F1C556 /* BNRObserver.m in Sources */,
 				4332F1E419DD08A700EAB480 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +265,7 @@
 				4332F1ED19DD08A700EAB480 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
